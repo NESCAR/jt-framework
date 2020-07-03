@@ -36,7 +36,7 @@ public class Jt808ServerConfigure {
 
     public void configureServerBootstrap(ServerBootstrap serverBootstrap) {
         serverBootstrap
-                .option(ChannelOption.SO_BACKLOG, 2048)
+                .option(ChannelOption.SO_BACKLOG, 128)
                 .option(ChannelOption.SO_REUSEADDR, true)
                 .childOption(ChannelOption.SO_KEEPALIVE, true);
     }
